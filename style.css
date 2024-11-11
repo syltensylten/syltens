@@ -1,1 +1,6 @@
-ECHO is on.
+@font-face {
+    font-family: "jacquardabastarda";
+    src: url('fonts/jacquardabastarda.ttf');
+}
+
+
