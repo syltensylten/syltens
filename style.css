@@ -3,4 +3,40 @@
     src: url('fonts/jacquardabastarda.ttf');
 }
 
+* {
+    box-sizing: border-box;
+    flex-direction: row;
+}
 
+.title {
+    font-family: jacquardabastarda;
+    font-size: 42px;
+    color: green;
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    width: 600px;
+    
+}
+
+.sidebar {
+    background-color: antiquewhite;
+    font-size: 20px;
+    width: 150px;
+    text-align: left;
+    padding: 20px;
+    margin: -50;
+    border: 5px solid darkblue;
+    height: 500px;
+}
+
+.birches {
+    padding: 0px;
+    text-align: center;
+    margin: 10px;
+}
+.things {
+    padding: 0px;
+    margin: 0px;
+}
