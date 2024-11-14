@@ -1,0 +1,10 @@
+body {
+    display: flex;
+}
+
+.ett {
+    background-color: green;
+    padding: 50px;
+    border: 5px solid black;
+    margin: 5px;
+}
