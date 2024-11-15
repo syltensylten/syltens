@@ -24,18 +24,12 @@ link h1{
 
 .title {
     text-align: left;
-    margin: 0px;
-    padding: 0px;
-    width: 600px;
     display: flex;
     
 }
 
 .things {
-    padding: 0px;
-    margin: 0px;
-    border: 5px solid black;
-    width: 200px;
+    text-align: left;
 }
 
 .title h1{
@@ -45,26 +39,16 @@ link h1{
     background-color: antiquewhite;
     text-align: left;
     margin: 0px;
-    padding: 0px;
-    width: 650px;
-    flex: 1;
-    
+    margin-top: 20px;
 }
 
 .sidebar {
     background-color: antiquewhite;
     font-size: 15px;
-    width: 150px;
     text-align: left;
-    padding: 15px;
-    margin: 0px;
-    border: 5px solid darkblue;
-    height: 500px;
+    padding: 10px;
 }
 
 .birches {
-    padding: 0px;
     text-align: center;
-    margin: 10px;
-    width: 200px;
 }
