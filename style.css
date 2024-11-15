@@ -7,26 +7,46 @@
     box-sizing: border-box;
 }
 
-body {
-    width: 800px;
-    justify-content: center;
-    align-items: center;
+.main{
+    display: flex;
 }
 
-link {
-    color: green;
+.container {
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
 
+link h1{
+    color: green;
+    text-decoration: none;
 }
 
 .title {
-    font-family: jacquardabastarda;
-    font-size: 42px;
-    color: green;
-    background-color: antiquewhite;
-    text-align: center;
+    text-align: left;
     margin: 0px;
     padding: 0px;
     width: 600px;
+    display: flex;
+    
+}
+
+.things {
+    padding: 0px;
+    margin: 0px;
+    border: 5px solid black;
+    width: 200px;
+}
+
+.title h1{
+    font-family: jacquardabastarda;
+    font-size: 90px;
+    color: green;
+    background-color: antiquewhite;
+    text-align: left;
+    margin: 0px;
+    padding: 0px;
+    width: 650px;
     flex: 1;
     
 }
@@ -46,10 +66,5 @@ link {
     padding: 0px;
     text-align: center;
     margin: 10px;
-    width: 200px;
-}
-.things {
-    padding: 0px;
-    margin: 0px;
     width: 200px;
 }
