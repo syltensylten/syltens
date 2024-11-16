@@ -1,3 +1,4 @@
+/* Base styling */
 * {
     margin: 0;
     padding: 0;
@@ -5,43 +6,42 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-image: url('img/bg.jpg');
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     height: 100vh;
-    border: 10px solid green;
 }
 
-body h1{
-    text-align: left;
-    color: teal;
+.titel {
+    display: flex;
+    justify-content: left;
+    margin-left: 10px;
+    margin-left: 25px;
+    border: 2px solid;
 }
 
-.container {
-    text-align: center;
-    width: 80%;
-    max-width: 600px;
+.titel h1 {
+    font: 80px caption;
 }
 
-/* Styling the box elements */
 .box {
-    background-color: #e2eafc;
-    margin: 20px;
-    padding: 20px;
-    border: 2px solid #1e90ff;
-    border-radius: 5px;
+    background-color: aquamarine;
 }
 
-/* Headers inside boxes */
-.box h2 {
-    color: #1e90ff;
-    margin-bottom: 10px;
+.top {
+    display: flex;
+
 }
 
-/* Paragraph inside boxes */
-.box p {
-    color: #555;
+.sidebar {
+    margin-top: 50px;
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+    height: 200px;
 }
+
+
+
+/* Top row */

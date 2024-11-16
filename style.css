@@ -1,70 +1,34 @@
-@font-face {
-    font-family: "jacquardabastarda";
-    src: url('fonts/jacquardabastarda.ttf');
-}
-
-* {
-    box-sizing: border-box;
-}
-
-.main{
+.main {
     display: flex;
+    margin-top: 20px;
+    flex-direction: column;
 }
 
-.container {
+.boxes {
+    justify-content: center;
+    align-items: center;
     display: flex;
-    justify-content: left;
-    gap: 20px;
+    width: 200px;
+    height: 200px;
 }
 
-link h1{
-    color: green;
-    text-decoration: none;
+.box {
+    background-color: red;
+}
+
+.box2 {
+    background-color: green;
+    
+}
+
+.box3 {
+    background-color: black;
+
 }
 
 .title {
-    text-align: left;
-    margin: 0px;
-    padding: 0px;
-    width: 600px;
+    font: arial;
+    font-size: 60px;
+    width: 200px;
     display: flex;
-    
-}
-
-.things {
-    padding: 0px;
-    margin: 0px;
-    border: 5px solid black;
-    width: 200px;
-}
-
-.title h1{
-    font-family: jacquardabastarda;
-    font-size: 90px;
-    color: green;
-    background-color: antiquewhite;
-    text-align: left;
-    margin: 0px;
-    padding: 0px;
-    width: 650px;
-    flex: 1;
-    
-}
-
-.sidebar {
-    background-color: antiquewhite;
-    font-size: 15px;
-    width: 150px;
-    text-align: left;
-    padding: 15px;
-    margin: 0px;
-    border: 5px solid darkblue;
-    height: 500px;
-}
-
-.birches {
-    padding: 0px;
-    text-align: center;
-    margin: 10px;
-    width: 200px;
 }
