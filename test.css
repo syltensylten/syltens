@@ -1,4 +1,3 @@
-/* Base styling */
 * {
     margin: 0;
     padding: 0;
@@ -13,25 +12,29 @@ body {
     height: 100vh;
 }
 
+.main {
+}
+
 .titel {
     display: flex;
     justify-content: left;
     margin-left: 10px;
     margin-left: 25px;
     border: 2px solid;
+    flex: 2;
 }
 
 .titel h1 {
     font: 80px caption;
 }
 
-.box {
+.navbar {
     background-color: aquamarine;
+    justify-content: right;
 }
 
 .top {
     display: flex;
-
 }
 
 .sidebar {
@@ -40,8 +43,7 @@ body {
     justify-content: left;
     margin-left: 50px;
     height: 200px;
+    width: 100px;
+    border: 1px solid;
+    padding: 25px;
 }
-
-
-
-/* Top row */
