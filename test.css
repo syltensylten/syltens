@@ -1,3 +1,4 @@
+/* Base styling */
 * {
     margin: 0;
     padding: 0;
@@ -5,45 +6,47 @@
 }
 
 body {
-    background-image: url('img/bg.jpg');
+    background-color: #2e2e36; /* Grey background */
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.main {
-}
-
-.titel {
+.container {
     display: flex;
-    justify-content: left;
-    margin-left: 10px;
-    margin-left: 25px;
-    border: 2px solid;
-    flex: 2;
+    flex-direction: column;
+    gap: 10px;
+    width: 80%;
 }
 
-.titel h1 {
-    font: 80px caption;
-}
-
-.navbar {
-    background-color: aquamarine;
-    justify-content: right;
-}
-
+/* Top row */
 .top {
     display: flex;
+    justify-content: space-between;
 }
 
-.sidebar {
-    margin-top: 50px;
+.box {
+    background-color: #ffffff; /* White boxes */
+}
+
+/* Middle row */
+.middle {
     display: flex;
-    justify-content: left;
-    margin-left: 50px;
-    height: 200px;
+    gap: 10px;
+}
+
+.small {
     width: 100px;
-    border: 1px solid;
-    padding: 25px;
+    height: 50px;
+}
+
+.tall {
+    flex: 1;
+    height: 300px;
+}
+
+.large {
+    flex: 2;
+    height: 300px;
 }
