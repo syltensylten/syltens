@@ -38,3 +38,18 @@ a:active {
     font-size: 25px;
     color: antiquewhite;
 }
+
+.start-stickers {
+    background-color: #001000;
+    border: 1px #002000 inset;
+    padding-top: 8px;
+    padding-bottom: 4px;
+    width: 440px;
+    display: inline-block;
+}
+
+.ascii {
+    font-family: monospace;
+    white-space: pre;
+    color: tomato;
+}
