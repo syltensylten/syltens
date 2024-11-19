@@ -3,11 +3,26 @@ body {
     font-size: 14px;
     color: #dbd9d8;
     background-color: #000000;
-    text-align: center;
+    justify-content: center;
 }
 .container-home {
-     width: 500px;
-     margin: 0 auto;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.container-about {
+    border: solid 1px white;
+    width: 750px;
+    height: 750px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.title-about {
+    border: solid 1px white;
+    margin: 20px;
 }
 
 .start-img {
@@ -52,4 +67,8 @@ a:active {
     font-family: monospace;
     white-space: pre;
     color: tomato;
+}
+
+h2 {
+
 }
