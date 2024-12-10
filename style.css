@@ -13,15 +13,23 @@ body {
 }
 
 .container-about {
-    border: solid 1px white;
+    border: outset 6px rgb(124, 82, 82);
     width: 750px;
     height: 750px;
     text-align: center;
     margin: 0 auto;
 }
 
+.sub-container-about {
+    border: none;
+    text-align: left;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+}
+
 .title-about {
-    border: solid 1px white;
+    border: outset 3px rgb(68, 161, 97);
     margin: 20px;
 }
 
