@@ -15,9 +15,14 @@ body {
 .container-about {
     border: outset 6px rgb(124, 82, 82);
     width: 750px;
-    height: 750px;
+    height: 700px;
     text-align: center;
     margin: 0 auto;
+    align-items: center;
+}
+
+.container-about img {
+    padding-top: 150px;
 }
 
 .sub-container-about {
@@ -78,5 +83,5 @@ a:active {
 }
 
 h2 {
-
+    font-size: 25px;
 }
