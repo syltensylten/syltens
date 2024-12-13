@@ -25,6 +25,10 @@ body {
     padding-top: 150px;
 }
 
+.container-view {
+    align-items: left;
+}
+
 .sub-container-about {
     border: none;
     text-align: left;
@@ -36,6 +40,24 @@ body {
 .title-about {
     border: outset 3px rgb(68, 161, 97);
     margin: 20px;
+    position: relative;
+}
+
+.home-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.home-icon img {
+    width: 100%;
+    height: 100%;
+    padding-top: 0px;
 }
 
 .start-img {
@@ -52,7 +74,7 @@ a {
 }
 
 a:hover {
-    border: 1px tomato;
+    border: 1px solid tomato;
     text-decoration: underline;
 }
 
