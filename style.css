@@ -27,6 +27,11 @@ body {
 
 .container-view {
     align-items: left;
+    width: 750px;
+}
+
+.container-view img {
+    padding-top: 0px;
 }
 
 .sub-container-about {
@@ -35,6 +40,11 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     font-size: 14px;
+}
+
+.title-view {
+    border: 2px solid rgb(68, 161, 97);
+    text-align: center;
 }
 
 .title-about {
