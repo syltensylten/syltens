@@ -1,0 +1,43 @@
+body {
+	align-items: center;
+	font-family: Times;
+    font-size: 14px;
+    color: #dbd9d8;
+    background-color: #000000;
+    justify-content: center;
+}
+
+.container {
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+.title {
+    border: 2px solid rgb(68, 161, 97);
+	display: flex;
+	align-items: center;
+	font-size: 35 px;
+	justify-content: center;
+	position: relative;
+}
+
+.desc-title {
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 0px;
+	font-size: 20px;
+	background-color: rgb(68, 161, 99);
+	height: 30px;
+	width: 700px;
+}
+
+.home-icon {
+	position: absolute;
+	left: 10px;
+}
+
+.home-icon img {
+	width: 7%;
+	height: 7%;
+	float: left;
+}
