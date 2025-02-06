@@ -13,12 +13,12 @@ body {
 }
 
 .title {
-    border: 2px solid rgb(68, 161, 97);
 	display: flex;
 	align-items: center;
-	font-size: 35 px;
 	justify-content: center;
 	position: relative;
+	font-size: 35 px;
+    border: 2px solid rgb(68, 161, 97);
 }
 
 .desc-title {
@@ -44,21 +44,6 @@ body {
 	display: block;
 }
 
-.img-grid {
-		display: grid;
-		grid-template-columns: repeat(3, 1fr);
-		grid template-rows: repeat(3, 1fr);
-		gap: 10px;
-		width: 600px;
-		padding-top: 50px;
-		margin: 0 auto;
-}
-
-.img-grid img {
-	width: 100%;
-	height: auto;
-}
-	
 a:hover {
     border: 1px solid rgb(68, 161, 97);
 }
