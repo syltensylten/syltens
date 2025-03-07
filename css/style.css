@@ -6,6 +6,8 @@
 
 body {
 	background-color: rgb(1, 1, 1);
+    color: #dbd9d8;
+    text-align: center;
 }
 /*----------------------------*/
 
@@ -27,29 +29,40 @@ body {
 /*------------------------*/
 /*  hem låda  */
 /*-----------------*/
-.continer-home {
-    text-align: center;
+.container-home {
+	text-align: center;
 }
 .start-img {
     border: 8px solid rgb(5, 34, 14);
-    border-style: double
+	border-style: double;
 }
 .links-home {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 25px;
-    color: antiquewhite;
+    color: antiquewhite;                                                                 
 }
 .start-stickers {
-    border: 10px solid rgb(40, 50, 140) /*inset*/;
+	/*border: 1px solid darkblue;*/
     padding-top: 4px;
     padding-bottom: 4px;
 	width: 420px;
+	margin: 0 auto;
 }
 .ascii {
     font-family: monospace;
     white-space: pre;
     color: tomato;
+}
+/*----------------------------*/
+
+
+/*------------------------*/
+/*  about låda  */
+/*-----------------*/
+.container-about {
+	text-align: left;
+	width: 600px;
 }
 /*----------------------------*/
 
@@ -68,9 +81,12 @@ body {
 	height: 100%;
 	display: block;
 }
-a:hover {
-    border: 1px solid rgb(68, 161, 97);
+
+.notfound-icon {
+	width: 250px;
+	height: 250px;
 }
+
 /*----------------------------*/
 
 
@@ -78,13 +94,14 @@ a:hover {
 /*  titellådor  */
 /*-----------------*/
 .title {
-    border: 2px solid rgb(68, 161, 97);
-	font-size: 35 px;
+	border: 1px solid darkblue;
+	font-size: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
 	width: 750px;
+	height: 80px;
 }
 
 .desc-title {
@@ -92,14 +109,20 @@ a:hover {
 	text-align: center;
 	font-size: 20px;
 	background-color: rgb(68, 161, 99);
-	border: solid 3px rgb(256, 240, 220);
+	border: solid 3px rgb(255, 240, 220);
 	line-height: 10px;
 	width: 620px;
 	margin-bottom: 50px;
 }
 
+h1 {
+	color: rgb(255, 240, 220);
+	font-family: 'jacquarda';
+	
+}
+
 h2 {
-	color: rgb(256, 240, 220);
+	color: rgb(255, 240, 220);
 	font-family: 'jacquarda';
 	
 }
@@ -112,7 +135,7 @@ h2 {
 .img-grid {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
-	grid template-rows: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
 	gap: 10px;
 	width: 600px;
 	margin: 0 auto;
@@ -124,8 +147,45 @@ h2 {
 .img-grid img {
 	width: 100%;
 	height: auto;
-	border: 1px solid rgb(256, 240, 220);
+	border: 1px solid rgb(255, 240, 220);
 }
+/*----------------------------*/
+
+
+/*------------------------*/
+/*  links  */
+/*-----------------*/
+a {
+	color: antiquewhite;
+	background-color: darkblue;
+	border: 2px solid darkblue;
+	text-decoration: none;
+	padding: 1px;
+}
+
+a:hover {
+	text-decoration: underline;
+	border: solid 1px darkcyan;
+}
+
+a:active {
+	color: darkcyan;
+}
+
+a img {
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
+}
+
+a .notfound-icon {
+	border: none;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/*a:visited {}*/
+	
 /*----------------------------*/
 
 
