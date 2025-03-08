@@ -33,8 +33,8 @@ body {
 	text-align: center;
 }
 .start-img {
-    border: 8px solid rgb(5, 34, 14);
-	border-style: double;
+    border: 8px rgb(5, 34, 14);
+	border-style: ridge double;
 }
 .links-home {
     margin-top: 10px;
@@ -43,10 +43,11 @@ body {
     color: antiquewhite;                                                                 
 }
 .start-stickers {
-	/*border: 1px solid darkblue;*/
+	background: #001000;
+	border: 1px inset #001000;
     padding-top: 4px;
     padding-bottom: 4px;
-	width: 420px;
+	width: 360px;
 	margin: 0 auto;
 }
 .ascii {
@@ -119,6 +120,7 @@ h1 {
 	color: rgb(255, 240, 220);
 	font-family: 'jacquarda';
 	
+
 }
 
 h2 {
@@ -163,19 +165,18 @@ a {
 	padding: 1px;
 }
 
+a img {
+	background-color: transparent;	
+	text-decoration: none;
+	border: none;
+}
+
 a:hover {
 	text-decoration: underline;
-	border: solid 1px darkcyan;
 }
 
 a:active {
 	color: darkcyan;
-}
-
-a img {
-	background-color: transparent;
-	text-decoration: none;
-	border: none;
 }
 
 a .notfound-icon {
