@@ -1,9 +1,3 @@
-
-@font-face {
-	font-family: 'jaqcuarda';
-	src: url('fonts/jacquardabastarda.ttf') format('truetype');
-}
-
 body {
 	background-color: rgb(1, 1, 1);
     color: #dbd9d8;
@@ -105,17 +99,6 @@ body {
 	height: 80px;
 }
 
-.desc-title {
-	margin-top: 7px;
-	text-align: center;
-	font-size: 20px;
-	background-color: rgb(68, 161, 99);
-	border: solid 3px rgb(255, 240, 220);
-	line-height: 10px;
-	width: 620px;
-	margin-bottom: 50px;
-}
-
 h1 {
 	color: rgb(255, 240, 220);
 	font-family: 'jacquarda';
@@ -134,23 +117,7 @@ h2 {
 /*------------------------*/
 /*  bild layout  */
 /*-----------------*/
-.img-grid {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(3, 1fr);
-	gap: 10px;
-	width: 600px;
-	margin: 0 auto;
-	column-gap: 10px;
-	row-gap: 30px;
-	margin-bottom: 100px;
-}
 
-.img-grid img {
-	width: 100%;
-	height: auto;
-	border: 1px solid rgb(255, 240, 220);
-}
 /*----------------------------*/
 
 
