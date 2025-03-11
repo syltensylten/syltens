@@ -89,27 +89,33 @@ body {
 /*  titellådor  */
 /*-----------------*/
 .title {
-	border: 1px solid darkblue;
-	font-size: 30px;
+	/*border: 1px dotted darkblue;*/
+	font-size: 25px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
 	width: 750px;
 	height: 80px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 h1 {
-	color: rgb(255, 240, 220);
-	font-family: 'jacquarda';
-	
-
+  color: rgb(255, 240, 220);
 }
 
 h2 {
 	color: rgb(255, 240, 220);
-	font-family: 'jacquarda';
-	
+}
+/*----------------------------*/
+
+
+/*------------------------*/
+/*  video layout  */
+/*-----------------*/
+.video {
+  padding-top: 50px;
 }
 /*----------------------------*/
 
@@ -124,18 +130,12 @@ h2 {
 /*------------------------*/
 /*  links  */
 /*-----------------*/
-a {
+.links-home a {
 	color: antiquewhite;
 	background-color: darkblue;
 	border: 2px solid darkblue;
 	text-decoration: none;
 	padding: 1px;
-}
-
-a img {
-	background-color: transparent;	
-	text-decoration: none;
-	border: none;
 }
 
 a:hover {
@@ -150,6 +150,12 @@ a .notfound-icon {
 	border: none;
 	text-decoration: none;
 	background-color: transparent;
+}
+
+a img {
+	background-color: transparent;
+	text-decoration: none;
+	border: none;
 }
 
 /*a:visited {}*/
