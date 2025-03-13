@@ -33,27 +33,27 @@ body {
 	text-align: center;
 }
 .start-img {
-    border: 8px rgb(5, 34, 14);
+  border: 8px rgb(5, 34, 14);
 	border-style: ridge double;
 }
 .links-home {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 25px;
-    color: antiquewhite;                                                                 
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: antiquewhite;                                                                 
 }
 .start-stickers {
 	background: #001000;
 	border: 1px inset #001000;
-    padding-top: 4px;
-    padding-bottom: 4px;
-	width: 360px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+	width: 500px;
 	margin: 0 auto;
 }
 .ascii {
-    font-family: monospace;
-    white-space: pre;
-    color: tomato;
+  font-family: monospace;
+  white-space: pre;
+  color: tomato;
 }
 /*----------------------------*/
 
