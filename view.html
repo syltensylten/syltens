@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viewables</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+      <div class="title">
+        <h2>Viewable Image Files</h2>    
+        <a href="index.html" class="home-icon"><img src="img/syltensb.png" alt="home"></a>
+      </div>
+
+      <div class="img-grid">
+        <div class="column">
+          <img src="img/2024.png">
+          <img src="img/Frormer_bw.png">
+          <img src="img/Mimmikaka.jpeg">
+          <img src="img/Syltensb.png">
+        </div>
+        <div class="column">
+          <img src="img/Misse.png">
+          <img src="img/bg.jpg">
+          <img src="img/bjork.gif">
+          <img src="img/grodstol.png">
+        </div>
+      </div>
+        
+      <div class="popup-img">
+        <img src="img/2024.png">
+      </div>
+
+  </div>
+<script>
+  document.querySelectorAll('.img-grid .column img').forEach( img => {
+    img.onclick = () => {
+      document.querySelector('.popup-img').style.display = 'block';
+      document.querySelector('.popup-img img').src = img.getAttribute('src');
+    }
+  });
+
+  document.querySelector('.popup-img').onclick = (e) => {
+    if (e.target !== document.querySelector('.popup-img img')) {
+      document.querySelector('.popup-img').style.display = 'none';
+    }
+  };
+</script>
+</body>
