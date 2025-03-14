@@ -1,0 +1,1 @@
+"ffmpeg -ss 40 -i datamoshe.mp4 -t 50 -pix_fmt rgb24 -filter:v "scale=-1:320:flags=lanczos,fps=10"  -q:v 10  datamoshe.gif" 
