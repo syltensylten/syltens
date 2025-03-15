@@ -1,13 +1,7 @@
-
-@font-face {
-	font-family: 'jaqcuarda';
-	src: url('fonts/jacquardabastarda.ttf') format('truetype');
-}
-
 body {
 	background-color: rgb(1, 1, 1);
-    color: #dbd9d8;
-    text-align: center;
+  color: #dbd9d8;
+  text-align: center;
 }
 /*----------------------------*/
 
@@ -35,12 +29,15 @@ body {
 .start-img {
   border: 8px rgb(5, 34, 14);
 	border-style: ridge double;
+  transform: translate(0, -40px);
+  height: 600px;
 }
 .links-home {
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 25px;
-  color: antiquewhite;                                                                 
+  color: antiquewhite;
+  transform: translate(0, -20px);
 }
 .start-stickers {
 	background: #001000;
@@ -95,39 +92,63 @@ body {
 /*  titellådor  */
 /*-----------------*/
 .title {
-	border: 1px solid darkblue;
-	border-radius: 10px;
-	font-size: 30px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: relative;
 	width: 750px;
 	height: 80px;
+  /*border: 1px solid darkblue;*/
+	border-radius: 10px;
+  padding-top: 40px;
 }
 
-.desc-title {
-	margin-top: 7px;
-	text-align: center;
-	font-size: 20px;
-	background-color: rgb(68, 161, 99);
-	border: solid 3px rgb(255, 240, 220);
-	line-height: 10px;
-	width: 620px;
-	margin-bottom: 50px;
+.sub-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	width: 420px;
+}
+
+.category-title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+	width: 420px;
+  transform: translate( 0, -30px );
+}
+
+.category-title :a {
+  background-color: transparent;
 }
 
 h1 {
-	color: rgb(255, 240, 220);
-	font-family: 'jacquarda';
-	
-
+	font-size: 50px;
+  color: antiquewhite;
+  font-family: sans-serif;
+  transform: translate(0, -30px);
 }
 
+
 h2 {
-	color: rgb(255, 240, 220);
-	font-family: 'jacquarda';
-	
+  font-family: monospace;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+h3 {
+  font-family: monospace;
+  font-size: 20px;
+  font-weight: bolder;
+  color: antiquewhite;
+}
+
+h4 {
+  font-family: cursive;
+  font-size: 40px;
+  font-weight: bold;
+  color: antiquewhite; 
 }
 /*----------------------------*/
 
@@ -140,12 +161,11 @@ h2 {
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: repeat(3, 1fr);
 	gap: 10px;
-	width: 600px;
+	width: 750px;
 	margin: 0 auto;
 	column-gap: 10px;
 	row-gap: 30px;
-	padding-top: 50px;
-	margin-bottom: 100px;
+  transform: translate( 0, -40px);
 }
 
 .img-grid img {
@@ -182,17 +202,16 @@ h2 {
 .video-container {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 15px;
+	gap: 45px;
 	justify-content: center;
-	padding-top: 150px;
 }
 
 .video-container .video {
 	height: 250px;
 	width: 350px;
 	cursor: pointer;
-	border: 1px solid;
-	border-radius: 5px;
+	border: 1px solid rgba(255,255,255,0.2);
+	border-radius: 15px;
 	overflow: hidden;
 }
 
