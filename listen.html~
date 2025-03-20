@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listenables</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/syltensb.png" type="image/png">
+</head>
+<body>
+
+  <div class="container">
+    <div class="title">
+        <h2>Viewable Image Files</h2>
+        <a href="index.html" class="home-icon"><img src="img/syltensb.png" alt="home"></a>
+      </div>
+      
+      <div class="category-title">
+        <a><h3>Glitch</h3></a>
+        <a><h3>Gifs</h3></a>
+        <a><h3>Drawings</h3></a>
+        <a><h3>Paintings</h3></a>
+      </div>
+      
+      <div class="sub-title"><h4>Recents</h4></div>
+      <div class="audio-grid">
+        <div class="column">
+          <audio controls>
+            <source src="audio/taget.mp3" type="audio/mpeg">
+          </audio>
+          <audio controls>
+            <source src="audio/2024.mp3" type="audio/mpeg">
+          </audio>
+        </div>
+      </div>
+        
+      <div class="popup-img">
+        <img src="img/2024.png">
+      </div>
+    </div>
+
+  </div>
+
+</body>
