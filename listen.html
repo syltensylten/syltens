@@ -41,4 +41,19 @@
       </div>
     </div>
 
+<script>
+  document.querySelectorAll('.audio-grid .column img').forEach( img => {
+    img.onclick = () => {
+      document.querySelector('.popup-img').style.display = 'block';
+      document.querySelector('.popup-img img').src = img.getAttribute('src');
+    }
+  });
+
+  document.querySelector('.popup-img').onclick = (e) => {
+    if (e.target !== document.querySelector('.popup-img img')) {
+      document.querySelector('.popup-img').style.display = 'none';
+    }
+  };
+</script>
+
 </body>
