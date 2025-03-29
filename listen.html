@@ -26,14 +26,10 @@
             <div class="sub-title"><h4>Recents</h4></div>
             <div class="audio-grid">
                 <div class="column">
-                    <img src="audio/covers/bad.gif" />
-                    <audio controls>
-                        <source src="audio/taget.mp3" type="audio/mpeg" />
-                        <source src="audio/2024.mp3" type="audio/mpeg" />
-                    </audio>
-                    <audio controls>
-                        <source src="audio/2024.mp3" type="audio/mpeg" />
-                    </audio>
+                    <img src="audio/covers/bad.gif"/>
+                    <img src="audio/covers/nyår_dm.gif"/>
+                    <img src="audio/covers/samladedigital.gif"/>
+                    <img src="audio/covers/tshirshufflet.gif"/>
                 </div>
             </div>
 
@@ -48,16 +44,18 @@
         <script>
             document.querySelectorAll(".audio-grid .column img").forEach((img) => {
                     img.onclick = () => {
-                        document.querySelector(".popup-audio").style.display = "block";
-                        document.querySelector(".popup-audio img").src = img.getAttribute("src");
-                    };
-                });
-
+                        const popupAudio = document.querySelector(".popup-audio");
+                        if (popupAudio.style.display !== "block") {
+                            popupAudio.style.display = "block";
+                            popupAudio.querySelector("img").src = img.getAttribute("src");
+                        }
             document.querySelector(".popup-audio").onclick = (e) => {
-                if (e.target !== document.querySelector(".popup-audio img")) {
+                if (e.target === document.querySelector(".popup-audio")) {
                     document.querySelector(".popup-audio").style.display = "none";
                 }
             };
+                        }
+                    };
         </script>
     </body>
 </html>
