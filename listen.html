@@ -27,14 +27,19 @@
             <div class="audio-grid">
                 <div class="column">
                     <img src="audio/covers/bad.gif"/>
+                </div>
+                <div class="column">
                     <img src="audio/covers/nyår_dm.gif"/>
+                </div>
+                <div class="column">
                     <img src="audio/covers/samladedigital.gif"/>
                     <img src="audio/covers/tshirshufflet.gif"/>
                 </div>
             </div>
 
             <div class="popup-audio">
-                <img src="img/2024.png">
+                <img src="audio/covers/bad.gif">
+                <h3>taget.mp3</h3>
                 <audio controls>
                     <source src="audio/taget.mp3" type="audio/mpeg">
                 </audio>
@@ -45,17 +50,20 @@
             document.querySelectorAll(".audio-grid .column img").forEach((img) => {
                     img.onclick = () => {
                         const popupAudio = document.querySelector(".popup-audio");
-                        if (popupAudio.style.display !== "block") {
-                            popupAudio.style.display = "block";
+                        if (popupAudio.style.display !== "flex") {
+                            popupAudio.style.display = "flex";
                             popupAudio.querySelector("img").src = img.getAttribute("src");
+
+                            const audioName = img.getAttribute("src").split("/").pop()[0];
+                            popupAudio.queryselector("h3").textContent = audioName;
                         }
+                    };
+            });
             document.querySelector(".popup-audio").onclick = (e) => {
                 if (e.target === document.querySelector(".popup-audio")) {
                     document.querySelector(".popup-audio").style.display = "none";
                 }
             };
-                        }
-                    };
         </script>
     </body>
 </html>
