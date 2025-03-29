@@ -37,26 +37,25 @@
                 </div>
             </div>
 
-            <div class="popup-img">
-                <img src="img/2024.png" />
+            <div class="popup-audio">
+                <img src="img/2024.png">
+                <audio controls>
+                    <source src="audio/taget.mp3" type="audio/mpeg">
+                </audio>
             </div>
         </div>
 
         <script>
-            document
-                .querySelectorAll(".audio-grid .column img")
-                .forEach((img) => {
+            document.querySelectorAll(".audio-grid .column img").forEach((img) => {
                     img.onclick = () => {
-                        document.querySelector(".popup-img").style.display =
-                            "block";
-                        document.querySelector(".popup-img img").src =
-                            img.getAttribute("src");
+                        document.querySelector(".popup-audio").style.display = "block";
+                        document.querySelector(".popup-audio img").src = img.getAttribute("src");
                     };
                 });
 
-            document.querySelector(".popup-img").onclick = (e) => {
-                if (e.target !== document.querySelector(".popup-img img")) {
-                    document.querySelector(".popup-img").style.display = "none";
+            document.querySelector(".popup-audio").onclick = (e) => {
+                if (e.target !== document.querySelector(".popup-audio img")) {
+                    document.querySelector(".popup-audio").style.display = "none";
                 }
             };
         </script>
