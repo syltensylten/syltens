@@ -1,3 +1,3 @@
-# Syltens webpage -- but Vue.js
+# Syltens webpage - but Tailwind & Vue.js
 
 In progress...
