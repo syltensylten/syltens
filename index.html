@@ -1,37 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Syltens Burk</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Syltens. B</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="icon" href="img/syltensb.png" type="image/png" />
+    </head>
 
-<body>
-    <div class="bg-[#001000] text-[#dbd9d8] text-center mx-auto flex flex-col justify-center items-center">
-		<div class="text-center">
+    <body class="bg-black text-center">
+        <div class="mx-auto">
+            <!-- Main Header -->
+            <div class="text-center">
+                <h1 class="text-6xl text-white font-bold pt-16">
+                    Syltens Burk
+                </h1>
+                <img
+                    src="img/bg.jpg"
+                    alt="mff-tavlan"
+                    class="mx-auto max-h-[70vh] p-10"
+                />
+            </div>
 
-			<h1 class="text-5xl font-sans">
-			Syltens Burk
-			</h1>
+            <!-- Navigation Links -->
+            <div class="flex justify-center gap-6 mb-10">
+                <a
+                    href="about.html"
+                    class="bg-blue-900 px-2 text-xl text-[#FAEBD7] hover:text-blue-400"
+                    >About</a
+                >
+                <a
+                    href="view.html"
+                    class="bg-blue-900 px-2 text-xl text-[#FAEBD7] hover:text-blue-400"
+                    >Viewables</a
+                >
+                <a
+                    href="listen.html"
+                    class="bg-blue-900 px-2 text-xl text-[#FAEBD7] hover:text-blue-400"
+                    >Listenables</a
+                >
+                <a
+                    href="watch.html"
+                    class="bg-blue-900 px-2 text-xl text-[#FAEBD7] hover:text-blue-400"
+                    >Watchables</a
+                >
+            </div>
 
-			<img src="img/bg.jpg" class="w-[600px] h-auto">
-
-			<div class="m-3 text-2xl py-2">
-				<a href="about.html">About</a>
-				<a href="view.html">Viewables</a>
-				<a href="listen.html">Listenables</a>
-				<a href="watch.html">Watchables</a>
-			</div>
-
-			<br></br>
-
-			<div class="bg-[#001000] border w-[500px]">
-				<img src="buttons/cow.gif" height="50px">
-				<img src="buttons/email.gif" height="50px">
-				<img src="buttons/linu.gif" height="50px">
-             <img src="buttons/union.gif" height="50px">
-			</div>
-		</div>
-	</div>
-</body>
+            <!-- Stickers Section -->
+            <div class="flex justify-center gap-6">
+                <img src="buttons/cow.gif" alt="cow" class="h-12" />
+                <img src="buttons/email.gif" alt="email" class="h-12 w-12" />
+                <img src="buttons/linu.gif" alt="linux" class="h-12 w-12" />
+                <img src="buttons/union.gif" alt="union" class="h-12 w-12" />
+            </div>
+        </div>
+    </body>
 </html>

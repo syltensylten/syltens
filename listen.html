@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Listenables</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="icon" href="img/syltensb.png" type="image/png" />
+    </head>
+    <body class="bg-black">
+        <!-- navbar container -->
+        <div class="w-full flex justify-center pt-20">
+            <!-- inner navbar -->
+            <div class="w-full max-w-4xl relative flex items-center">
+                <!-- home icon -->
+                <a href="index.html">
+                    <img src="img/syltensb.png" class="h-12" alt="home"/>
+                </a>
+                <h2 class="text-5xl text-white absolute whitespace-nowrap left-1/2 transform -translate-x-1/2">
+                    Listenable Audio Files 
+                </h2>
+            </div>   
+        </div>
+        <div class="flex justify-center w-full">
+            <!-- audio grid -->
+            <div class="grid grid-cols-3 gap-4 mt-32 max-w-4xl">
+                <div class="flex justify-center">
+                    <img src="audio/covers/bad.gif" class="cursor-pointer border-8"/>
+                </div>
+                <div class="flex justify-center">
+                    <img src="audio/covers/nyår_dm.gif" class="cursor-pointer border-8"/>
+                </div>
+                <div class="flex justify-center">
+                    <img src="audio/covers/samladedigital.gif" class="cursor-pointer border-8"/>
+                </div>
+                <div class="flex justify-center">
+                    <img src="audio/covers/tshirshufflet.gif" class="cursor-pointer border-8"/>
+                </div>
+            </div>
+        </div>
+        <!-- popup audio -->
+        <div class="popup-audio fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center hidden">
+                <div class="bg-white p-8 rounded-lg text-center max-w-[650px] w-full">
+                    <img src="audio/covers/bad.gif" class="mx-auto mb-4" />
+                    <h3 class="text-[24px] text-black mb-4">taget.mp3</h3>
+                    <audio controls class="w-full mb-4">
+                        <source src="audio/taget.mp3" type="audio/mpeg" />
+                    </audio>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // open popup audio 
+            document
+                .querySelectorAll(".grid img")
+                .forEach((img) => {
+                    img.onclick = () => {
+                        const popupAudio =
+                            document.querySelector(".popup-audio");
+                        if (popupAudio.style.display !== "flex") {
+                            popupAudio.style.display = "flex";
+                            popupAudio.querySelector("img").src =
+                                img.getAttribute("src");
+
+                            const audioName = img
+                                .getAttribute("src")
+                                .split("/")
+                                .pop()
+                                .split(".")[0];
+                            popupAudio.querySelector("h3").textContent =
+                                `${audioName}.mp3`;
+                            document.querySelector("audio").play();
+                        }
+                    };
+                });
+
+            // close popup when clicking outside content
+            document.querySelector(".popup-audio")
+                .onclick = (e) => {
+                    if (e.target === document.querySelector(".popup-audio")) {
+                        document.querySelector(".popup-audio")
+                        .style.display = "none";
+                        document.querySelector("audio").pause();
+                }
+            };
+
+            // close popup with ESC
+            document.addEventListener("keydown", (e) => {
+                if (e.key === "Escape") {
+                    document.querySelector(".popup-img")
+                        .style.display = "none";
+                    document.querySelector("audio").pause();
+                }
+            });
+
+        </script>
+    </body>
+</html>

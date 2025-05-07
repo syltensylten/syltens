@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Watchables</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="icon" href="img/syltensb.png" type="image/png" />
+    </head>
+    <body class="bg-black text-white">
+        <!-- navbar container -->
+        <div class="w-full flex justify-center pt-20">
+            <!-- inner navbar -->
+            <div class="w-full max-w-4xl relative flex items-center">
+                <!-- home icon -->
+                <a href="index.html">
+                    <img src="img/syltensb.png" class="h-12" alt="home"/>
+                </a>
+                <h2 class="text-5xl text-white absolute whitespace-nowrap left-1/2 transform -translate-x-1/2">
+                   Watchable Video Files 
+                </h2>
+            </div>   
+        </div>
+        <div class="flex justify-center w-full">
+            <!-- Video Grid -->
+            <div class="grid grid-cols-2 gap-4 mt-32 max-w-4xl">
+                <div class="video flex justify-center">
+                    <video class="cursor-pointer border-8" muted>
+                        <source src="vid/vinterdans.mp4" />
+                    </video>
+                </div>
+                <div class="video flex justify-center">
+                    <video class="cursor-pointer border-8" muted>
+                        <source src="vid/datamoshe.mp4" />
+                    </video>
+                </div>
+                <div class="video flex justify-center">
+                    <video class="cursor-pointer border-8" muted>
+                        <source src="vid/dani.mp4" />
+                    </video>
+                </div>
+                <div class="video flex justify-center">
+                    <video class="cursor-pointer border-8" muted>
+                        <source src="vid/samlade_mosh.mp4" />
+                    </video>
+                </div>
+            </div>
+        </div>
+            <!-- Popup Video -->
+            <div class="popup-video fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center hidden">
+                <div class="bg-white p-4 rounded-lg">
+                    <video src="vid/movie.mp4" controls muted loop autoplay class="max-w-4xl w-full"></video>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            // open popup video
+            document
+                .querySelectorAll(".grid video")
+                .forEach((vid) => {
+                    vid.onclick = () => {
+                        document.querySelector(".popup-video").style.display =
+                            "flex";
+                        document.querySelector(".popup-video video").src = vid
+                            .querySelector("source")
+                            .getAttribute("src");
+                    };
+                });
+
+            // close popup when clicking outside the video
+            document.querySelector(".popup-video").onclick = (e) => {
+                if (e.target !== document.querySelector(".popup-video video")) {
+                    document.querySelector(".popup-video").style.display =
+                        "none";
+                    document.querySelector(".popup-video video").pause();
+                }
+            };
+
+            // close pop with ESC
+            document.addEventListener("keydown", (e) => {
+                if (e.key == "Escape") {
+                    document.querySelector(".popup-video").style.display =
+                        "none";
+                    document.querySelector(".popup-video video").pause();
+                }
+            });
+        </script>
+    </body>
+</html>
