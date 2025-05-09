@@ -9,42 +9,47 @@
     </head>
     <body class="bg-black text-white">
         <!-- navbar container -->
-        <div class="w-full flex justify-center pt-20">
+        <div class="w-full flex justify-center sm:pt-20 pt-10">
             <!-- inner navbar -->
             <div class="w-full max-w-4xl relative flex items-center">
                 <!-- home icon -->
                 <a href="index.html">
-                    <img src="img/syltensb.png" class="h-12" alt="home"/>
+                    <img src="img/syltensb.png" class="px-6 h-12" alt="home"/>
                 </a>
-                <h2 class="text-5xl text-white absolute whitespace-nowrap left-1/2 transform -translate-x-1/2">
-                   Watchable Video Files 
+                <h2 class=
+                        "sm:text-5xl text-3xl font-bold text-white absolute sm:whitespace-nowrap
+                        left-1/2 transform -translate-x-1/2">
+                   Watchables 
                 </h2>
             </div>   
         </div>
         <div class="flex justify-center w-full">
             <!-- video grid -->
-            <div class="grid grid-cols-2 gap-4 mt-32 max-w-4xl">
+            <div class="grid sm:grid-cols-2 grid-cols-1 gap-4 sm:mt-32 mt-10 max-w-4xl px-6">
                 <div class="video flex justify-center">
-                    <video class="cursor-pointer border-8" muted>
+                    <video class="cursor-pointer border-8 rounded" muted>
                         <source src="vid/vinterdans.mp4" />
                     </video>
                 </div>
                 <div class="video flex justify-center">
-                    <video class="cursor-pointer border-8" muted>
+                    <video class="cursor-pointer border-8 rounded" muted>
                         <source src="vid/datamoshe.mp4" />
                     </video>
                 </div>
                 <div class="video flex justify-center">
-                    <video class="cursor-pointer border-8" muted>
+                    <video class="cursor-pointer border-8 rounded" muted>
                         <source src="vid/dani.mp4" />
                     </video>
                 </div>
                 <div class="video flex justify-center">
-                    <video class="cursor-pointer border-8" muted>
+                    <video class="cursor-pointer border-8 rounded" muted>
                         <source src="vid/samlade_mosh.mp4" />
                     </video>
                 </div>
             </div> 
+        </div>
+        <div class="text-center p-10">
+            o.o
         </div>
             <!-- popup video -->
             <div class="popup-video fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center hidden">
